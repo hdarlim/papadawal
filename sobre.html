@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa da Wal - Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <ul class="no-bullets">
+                <li><a href="index.html"><i class="fa-sharp-duotone fa-solid fa-spa"></i></a></li>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="no-bullets">
+                <input type="text" name="search" id="search" placeholder="Buscar...">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a id="btn-user"><i class="fa-regular fa-user"></i></a></li>
+                <li><a id="btn-cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">Nossa história</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>A nossa cozinha nasceu de uma vontade: ajudar pessoas a manterem uma rotina saudável sem complicação. Sabemos que o dia a dia é corrido, e nem sempre dá tempo de cozinhar, montar marmita ou seguir direitinho a dieta. Então decidimos criar uma solução que unisse personalização, sabor e praticidade.</p>
+
+                        <p>A partir daí, nossa cozinha virou um espaço onde cada detalhe importa. Nossa equipe é pequena, mas muito atenta — do primeiro corte ao último fechamento de pote. Selecionamos frutas, legumes e verduras todos os dias, escolhendo sempre o que está mais fresco e com melhor qualidade.</p>
+
+                        <p>Também entendemos que cada pessoa tem uma rotina e necessidades diferentes. Por isso, trabalhamos com marmitas personalizadas: você pode enviar a dieta da sua nutricionista ou simplesmente nos contar o que costuma comer. Nós montamos tudo de acordo com o seu perfil, do jeito que realmente funciona no seu dia a dia.</p>
+
+                        <p>Além das marmitas, oferecemos opções que deixam a alimentação ainda mais prática:</p>
+                        
+                        <ul class="services-list">
+                            <li>Saladas higienizadas, prontas para consumo</li>
+                            <li>Frutas já cortadas</li>
+                            <li>Bolo zero açúcar</li>
+                            <li>Hambúrguer artesanal</li>
+                            <li>Lanches variados</li>
+                            <li>Pacotes completos para semana ou mês</li>
+                        </ul>
+                        
+                        <p>Preparamos tudo diariamente — nada congelado. Mas, como nossas embalagens são próprias para congelamento, você pode guardar o que quiser sem perder qualidade. E para facilitar de verdade, realizamos entregas, assim você recebe tudo fresquinho, organizado e pronto para usar.</p>
+
+                        <p class="highlight">É assim que trabalhamos: combinando frescor, cuidado e praticidade para que sua alimentação saudável caiba na sua rotina sem complicações.</p>
+                    </div>
+
+            <div class="about-image">
+                <img src="img/papadawal.jpeg" alt="Alimentos frescos e preparados com cuidado">
+                <img src="img/PAPADAWAL2.jpeg" alt="Nossas entregas e embalagens">
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modal-user" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <p>Acesse sua conta para continuar</p>
+            <input type="email" placeholder="Seu E-mail" class="modal-input">
+            <input type="password" placeholder="Sua Senha" class="modal-input">
+            <button class="btn-modal">Entrar</button>
+            <p class="small-text">Não tem conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <div id="modal-cart" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div class="cart-box">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <button class="btn-modal">Ver Produtos</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Papa da Wal</h3>
+                <p>Saúde e sabor entregues na sua porta. A melhor opção de marmitas em Bragança Paulista.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Acesso Rápido</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contatos</h3>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i> (11) 95769-7500
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/papadawall/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> @papadawall
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Papa da Wal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

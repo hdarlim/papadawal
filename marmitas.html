@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa da Wal - Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <ul class="no-bullets">
+                <li><a href="index.html"><i class="fa-sharp-duotone fa-solid fa-spa"></i></a></li>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="no-bullets">
+                <input type="text" name="search" id="search" placeholder="Buscar...">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a id="btn-user"><i class="fa-regular fa-user"></i></a></li>
+                <li><a id="btn-cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <h1>Marmitas</h1>
+        </div>
+
+        <div class="steps-container">
+            <a href="marmitas.html" class="step-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <h2 class="fonte-maior">Envie sua dieta</h2>
+                <p class="fonte-maior">Personalize seu pedido!</p><br>
+
+                <input type="file" id="upload-dieta" style="display: none;">
+                <label for="upload-dieta" class="botao-enviar-arquivo">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Enviar minha dieta
+                </label>
+            </a>
+
+            <div class="step-card"> 
+                <div class="icon-circle">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h2 class="fonte-maior">Sugestões</h2>
+                <p class="fonte-maior">Pratos prontinhos para você se deliciar</p><br>
+
+                <section class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="img/Marmita - macarrão com frango e bacon.jpeg" alt="Marmita 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/Marmita - arroz, feijão, brócolis e frango desfiado.jpeg" alt="Marmita 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/Marmita - nhoque a bolonhesa.jpeg" alt="Marmita 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/Marmita - estrogonofe de carne com arroz.jpeg" alt="Marmita 4">
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev">‹</button>
+                        <button class="carousel-btn next">›</button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="modal-user" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <p>Acesse sua conta para continuar</p>
+            <input type="email" placeholder="Seu E-mail" class="modal-input">
+            <input type="password" placeholder="Sua Senha" class="modal-input">
+            <button class="btn-modal">Entrar</button>
+            <p class="small-text">Não tem conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <div id="modal-cart" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div class="cart-box">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <button class="btn-modal">Ver Produtos</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Papa da Wal</h3>
+                <p>Saúde e sabor entregues na sua porta. A melhor opção de marmitas em Bragança Paulista.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Acesso Rápido</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contatos</h3>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i> (11) 95769-7500
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/papadawall/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> @papadawall
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Papa da Wal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
